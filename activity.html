@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Bhagat Singh Club</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="general-styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="app.js"></script>
+    <script src="form.js"></script>
+</head>
+<body class="zs--container">
+    <header class="zs--header zs--overall-layout">
+      <a class="zs--header__logo" href="#">NBSC</a>
+
+      <nav class="zs--header__nav">
+        <a class="zs--header__nav--link" href="index.html">Home</a>
+        <a class="zs--header__nav--link" href="about.html">About</a>
+        <a class="zs--header__nav--link" href="program.html">Programs</a>
+        <a class="zs--header__nav--link zs--header-active" href="activity.html">Activities</a>
+        <a class="zs--header__nav--link" href="#zs--contact-us">Contact Us</a>
+      </nav>
+
+      <div class="zs--hamburger">
+        <div class="zs--hamburger__line"></div>
+        <div class="zs--hamburger__line"></div>
+        <div class="zs--hamburger__line"></div>
+      </div>
+    </header>
+
+
+    <main class="zs--main zs--overall-layout">
+        <section id="zs--activities" class="zs--section__padding">
+            <h3 class="zs--activities__title">Activities</h3>
+            <div class="zs--activites__featured-activities">
+                
+                <div class="zs--activities__featured-activities--activity-card">
+                    <figure class="zs--activities__featured-activities--activity-card__figure">
+                        <img src="https://images.pexels.com/photos/3476860/pexels-photo-3476860.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Activity picture">
+                    </figure>
+                    <h5 class="zs--activities__featured-activities--activity-card__title">
+                        Republic Day Flag Hosting
+                    </h5>
+                    <div class="zs--activities__featured-activities--activity-card__date-time">
+                        <span class="zs--activities__featured-activities--activity-card__date-time--date">
+                            26th January 2024
+                        </span>
+                        <span class="zs--activities__featured-activities--activity-card__date-time--time">
+                            From 9:00 AM Onwards
+                        </span>
+                    </div>
+                    <div class="zs--activities__featured-activities--activity-card__tag">
+                        Accomplished
+                    </div>
+                    <p class="zs--activities__featured-activities--activity-card__place">
+                        Rajpur Khurd
+                    </p>
+                    <div class="zs--activities__featured-activities--activity-card__links">
+                        <a class="zs--activities__featured-activities--activity-card__links--gallery" href="">Gallery</a>
+                        <a class="zs--activities__featured-activities--activity-card__links--learn-more" href="">Read More</a>
+                    </div>
+                </div>
+
+                <div class="zs--activities__featured-activities--activity-card">
+                    <figure class="zs--activities__featured-activities--activity-card__figure">
+                        <img src="https://images.pexels.com/photos/9304308/pexels-photo-9304308.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Activity picture">
+                    </figure>
+                    <h5 class="zs--activities__featured-activities--activity-card__title">
+                        Gandhi Jayenti
+                    </h5>
+                    <div class="zs--activities__featured-activities--activity-card__date-time">
+                        <span       class="zs--activities__featured-activities--activity-card__date-time--date">
+                            2nd October 2023 
+                        </span>
+                        <span class="zs--activities__featured-activities--activity-card__date-time--time">
+                            From 9:00 AM Onwards
+                        </span>
+                    </div>
+                    
+                    <div class="zs--activities__featured-activities--activity-card__tag">
+                        Accomplished
+                    </div>
+                    <p class="zs--activities__featured-activities--activity-card__place">
+                        Rajpur Khurd
+                    </p>
+                    <div class="zs--activities__featured-activities--activity-card__links">
+                        <a class="zs--activities__featured-activities--activity-card__links--gallery" href="">Gallery</a>
+                        <a class="zs--activities__featured-activities--activity-card__links--learn-more" href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <section id="zs--contact-us" class="zs--section__padding">
+            <h3 class="zs--contact-us__title">
+                    Get in touch
+            </h3> 
+            
+            <div class="zs__form--container">
+                <form class="zs__form--container__form" action="" method="post">
+                    <div class="zs__form--container__form--group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="zs__form--container__form--group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+
+                    <div class="zs__form--container__form--group">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="zs__form--container__form--group">
+                        <label for="grade">Class</label>
+                        <select id="grade" name="class">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+
+                    <div class="zs__form--container__form--group">
+                        <label for="timeslot">Preferred Time Slot for Phone Call</label>
+                        <input type="time" id="timeslot" name="timeslot" required>
+                    </div>
+
+                    <div class="zs__form--container__form--group">
+                        <button type="submit" onclick="whatsapp()" class="submit-button"><a href="index.html">Submit</a></button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+        <footer class="zs--footer zs--section__padding">
+            <div class="zs--footer__donation">
+                <div class="zs--footer__donation--message">
+                    <h2 class="zs--footer__donation--message__title">Support Our Cause</h2>
+                    <p class="zs--footer__donation--message__para">Your support helps us make a difference in the world. Consider making a donation today.</p>
+                </div>
+
+                <figure class="zs--footer__donation--qr">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png" alt="">
+                </figure>
+            </div>
+
+            <div class="zs--footer__newsletter">
+                <div class="zs--footer__newsletter--content">
+                    <h2 class="zs--footer__newsletter--content__title">
+                        Sign up to get latest update
+                    </h2>
+
+                    <p class="zs--footer__newsletter--content__para">
+                        Sign up for our monthly newsletter for the latest news & articles
+                    </p>    
+                </div>
+
+                <form class="zs--footer__newsletter--form">
+                    <input type="email" placeholder="Enter Your Email" />
+                    <input type="submit" value="Subscribe Now" />
+                </form>
+            </div>
+
+            <div class="zs--footer__author">
+                <div class="zs--footer__author--info">
+                    <a class="zs--header__logo" href="index.html">NBSC</a>
+
+                    <p class="zs--footer__author--info__para">
+                        New Bhagat Singh Club (NBSC) is committed to empowering underprivileged students through inclusive education, personalized mentorship, and quality teaching. Dedicated to guiding students to success, NBSC prepares them for college and competitive exams, striving to make a lasting impact on their lives.
+                    </p>
+                </div>
+
+                <div class="zs--footer__author--quick-links">
+                    <h3 class="zs--footer__author--quick-links__title">Quick Links</h3>
+
+                    <ul class="zs--footer__author--quick-links__container">
+                        <li>About</li>
+                        <li>Programs</li>
+                        <li>Activities</li>
+                        <li>Join us</li>
+                    </ul>
+                </div>
+
+                <div class="zs--footer__author--contact">
+                    <h3 class="zs--footer__author--contact__title">Contact</h3>
+
+                    <ul class="zs--footer__author--contact__container">
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <li>+91 00000 99999</li>
+                        </div>
+
+                        <div>
+                            <i class="fa-regular fa-envelope"></i>
+                            <li>newbhagatsingh_club@gmail.com </li>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <li>Rajpur Khurd, New Delhi, India</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="zs--footer__copy-rights">
+                <p>Copyrights &copy; New Bhagat Singh Club.2024 All Rights Reserved | Desgined and developed by <a href="zartajsolutions.com">Zartaj Solutions</a></p>
+
+                <div class="zs--footer__copy-rights--social">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

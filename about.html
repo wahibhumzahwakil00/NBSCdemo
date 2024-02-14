@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Bhagat Singh Club</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="general-styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="app.js"></script>
+    <script src="form.js"></script>
+</head>
+<body class="zs--container">
+    <header class="zs--header zs--overall-layout">
+      <a class="zs--header__logo" href="#">NBSC</a>
+
+      <nav class="zs--header__nav">
+        <a class="zs--header__nav--link" href="index.html">Home</a>
+        <a class="zs--header__nav--link zs--header-active" href="about.html">About</a>
+        <a class="zs--header__nav--link" href="program.html">Programs</a>
+        <a class="zs--header__nav--link" href="activity.html">Activities</a>
+        <a class="zs--header__nav--link" href="#zs--contact-us">Contact Us</a>
+      </nav>
+
+      <div class="zs--hamburger">
+        <div class="zs--hamburger__line"></div>
+        <div class="zs--hamburger__line"></div>
+        <div class="zs--hamburger__line"></div>
+      </div>
+    </header>
+
+
+    <main class="zs--main zs--overall-layout">
+        <section class="zs--bhagat-singh zs--section__padding">
+            <h2 class="zs--bhagat-singh-header">Bhagat Singh - A Revolutionary Hero</h2>
+            <div class="zs--bhagat-singh__deatils-container">
+                <div class="zs--bhagat-singh__details">
+                    <figure class="zs--bhagat-singh__details-img">
+                        <img src="data:image/jpeg;base64,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" alt="">
+                    </figure>
+                    <div class="zs--bhagat-singh__details--birth">
+                        <span class="zs--label">Born:</span>
+                        <span class="zs--value">September 28, 1907</span>
+                    </div>
+                    <div class="zs--bhagat-singh__details--birth-loc">
+                        <span class="zs--label">Birthplace:</span>
+                        <span class="zs--value">Bangay, Punjab, British India</span>
+                    </div>
+                    <div class="zs--bhagat-singh__details--demise">
+                        <span class="zs--label">Died:</span>
+                        <span class="zs--value">March 23, 1931</span>
+                    </div>
+                    <div class="zs--bhagat-singh__details--demise-loc">
+                        <span class="zs--label">Place of Death:</span>
+                        <span class="zs--value">Lahore Central Jail, British India</span>
+                    </div>
+                </div>
+
+                <div class="zs--bhagat-singh__about">
+                    <div class="zs--bhagat-singh__about--bio">
+                        <p>
+                            Bhagat Singh, born on September 28, 1907, in Bangay, Punjab, was a fearless freedom fighter and a key figure in the Indian independence movement. His unwavering commitment to the cause of a free India made him a symbol of courage and sacrifice.
+                        </p>
+
+                        <p>
+                            From a young age, Bhagat Singh was deeply inspired by the sacrifices of earlier freedom fighters. His vision for a free India was one where every citizen enjoyed equal rights and opportunities, regardless of caste or creed.
+                        </p>
+
+                        <p>
+                            Bhagat Singh's life was tragically cut short on March 23, 1931, when he was executed in Lahore Central Jail by the British colonial rulers. His sacrifice became a rallying cry for the independence movement, inspiring countless others to join the struggle for a free and sovereign India.
+                        </p>
+                    </div>
+
+                    <div class="zs--bhagat-singh__legacy">
+                        <h3>Legacy and Role Model</h3>
+                        <p>
+                        Bhagat Singh's legacy lives on as a symbol of fearlessness and patriotism. He continues to be a role model for generations, inspiring individuals to stand up against injustice and fight for the principles of freedom and equality.
+                        </p>
+
+                        <h3>Vision for Free India</h3>
+                        <p>
+                            Bhagat Singh envisioned a free India where every citizen had the right to live with dignity and enjoy the fruits of independence. His writings and speeches reflect a vision of a society free from exploitation and discrimination.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="zs--ourmembers" class="zs--section__padding">
+            <h3 class="zs--ourmembers__head">Our Esteemed Members</h3>
+            <div class="zs--ourmembers__contaner">
+                <figure class="zs--ourmembers__container--president">
+                    <img src="" alt="There is suppose to be a picture">
+                </figure>
+
+                <figure class="zs--ourmembers__container--member">
+                    <img src="" alt="there is suppose to be a picture">
+                </figure>
+
+                <figure class="zs--ourmembers__container--member">
+                    <img src="" alt="there is suppose to be a picture">
+                </figure>
+
+                <figure class="zs--ourmembers__container--member">
+                    <img src="" alt="there is suppose to be a picture">
+                </figure>
+
+                <figure class="zs--ourmembers__container--member">
+                    <img src="" alt="there is suppose to be a picture">
+                </figure>
+
+                <figure class="zs--ourmembers__container--member">
+                    <img src="" alt="there is suppose to be a picture">
+                </figure>
+
+                <figure class="zs--ourmembers__container--member">
+                    <img src="" alt="there is suppose to be a picture">
+                </figure>
+            </div>
+        </section>
+
+        <section class="zs--president zs--section__padding">
+            <div class="zs--president__info">
+                <figure class="zs--president__img">
+                    <img src="" alt="there should be a picture">
+                </figure>
+                <p>Vishal Bhagat Singh Rathi
+                    <br>M.A Politics
+                    <br>President at NBSC
+                </p>
+            </div>
+            <div class="zs--president__letter">
+                <h3>A Letter from the President of club</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ut assumenda eos ipsam dolorem eaque aliquid ea tempore vel velit reprehenderit iusto quaerat aut eius nisi, ullam libero temporibus consectetur ducimus repellendus placeat quia non perspiciatis reiciendis? Asperiores error mollitia quibusdam, voluptatum facere saepe. Repellendus doloremque, natus ipsam harum itaque quaerat sed nulla fugit eligendi. Hic optio quaerat dolor est porro culpa magnam, tenetur eaque beatae repudiandae perferendis ratione dolore amet nisi recusandae eum reiciendis. Dicta ex debitis labore in possimus ab vel minus iusto incidunt perspiciatis nisi magnam aut accusantium consequatur nostrum minima aspernatur similique voluptatum, inventore quia omnis consequuntur! Fugiat autem at dolores, ipsa recusandae dolorem esse est. Unde vitae quo numquam modi sunt delectus eaque nostrum vero? Delectus vel quidem ab corporis consequuntur nobis soluta at, deleniti assumenda perferendis similique dignissimos suscipit et aut porro quasi doloremque nesciunt facere vitae mollitia! Reprehenderit numquam ab blanditiis magni voluptatibus quaerat earum odio eos. Esse, architecto totam, omnis odit quisquam quidem perferendis officia aut vero quia unde inventore commodi atque voluptates at ipsa vitae. At hic quibusdam, voluptates in repudiandae maxime voluptatem impedit dolores sunt est tempora laudantium sit aut quo doloremque ab, blanditiis, aspernatur voluptatum vel pariatur molestias suscipit.
+                </p>
+            </div>
+        </section>
+
+        <section id="zs--about" class="zs--section__padding">
+            <div class="zs--about__our-vision">
+                <h5 class="zs--about__our-vision--title">About Us</h5>
+                <div class="zs--about-organization-message__content">
+                    <h2 class="zs--about-organization-message__content--main-head">
+                        Welcome to NEW BHAGAT SINGH CLUB
+                    </h2>
+                    <p class="zs--about-organization-message__content--para">
+                        Our mission is to empower and uplift the lives of underprivileged students through comprehensive education and support. At NBSC, we are dedicated to providing a transformative learning experience that goes beyond traditional classroom boundaries.
+                    </p>
+
+                    <ol class="zs--about-organization-message__content--list">
+                        <li class="zs--about-organization-message__content--list_item">
+                            <strong>Supporting the Underprivileged:</strong>
+                            <p>
+                                We are committed to extending a helping hand to economically disadvantaged students. Through various programs and initiatives, we aim to create an inclusive learning environment where every student has the opportunity to thrive.
+                            </p>
+                        </li>
+
+                        <li class="zs--about-organization-message__content--list_item">
+                            <strong>Guiding and Mentoring:</strong>
+                            <p>
+                                Our experienced mentors and educators are passionate about guiding students on their academic journey. We offer personalized mentorship to help students navigate their educational paths, make informed decisions, and overcome challenges.
+                            </p>
+                        </li>
+
+                        <li class="zs--about-organization-message__content--list_item">
+                            <strong>Quality Education:</strong>
+                            <p>
+                                NBSC believes in the power of education to bring about positive change. We provide high-quality teaching and learning resources to ensure that every student receives a well-rounded education that prepares them for success not only in academics but also in life.
+                            </p>
+                        </li>
+
+                        <li class="zs--about-organization-message__content--list_item">
+                            <strong>College Readiness:</strong>
+                            <p>
+                                We go beyond conventional teaching methods to equip students with the skills and knowledge necessary for admission to esteemed colleges and universities. Our goal is to empower students to excel academically and fulfill their dreams of pursuing higher education.
+                            </p>
+                        </li>
+
+                        <li class="zs--about-organization-message__content--list_item">
+                            <strong>Preparation for Competitive Exams:</strong>
+                            <p>
+                                Recognizing the importance of competitive exams such as JEE Mains, NEET, CETs, and UPSC, we offer specialized training programs. Our rigorous exam preparation strategies are designed to enhance students' confidence, knowledge, and performance in these competitive assessments.
+                            </p>
+                        </li>
+                    </ol>
+
+                    <p class="zs--about-organization-message__content--para">
+                        At New Bhagat Singh Club, we believe in the potential of every student, regardless of their background. Join us on this educational journey, where we strive to make a lasting impact on the lives of aspiring individuals, guiding them towards a future filled with opportunities and success. Together, let's build a brighter tomorrow through education.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="zs--our-gems" class="zs--section__padding">
+            <h3 class="zs--our-gems__title">
+                Our Gems
+            </h3>
+            <div class="zs--our-gems__container">
+                <div class="zs--our-gems__container--student-card">
+                    <figure class="zs--our-gems__container--student-card__figure">
+                        <img src="https://media.istockphoto.com/id/1360403989/photo/young-student-with-plane-and-book-study-abroad-concept.jpg?s=2048x2048&w=is&k=20&c=TaBrc5pPJu9TMeiO2pqt1BaGD0mEO0tQkX0oIJJC2EA=" alt="">
+                    </figure>
+                    <h2 class="zs--our-gems__container--student-card__name">Rishab</h2>
+                    <p class="zs--our-gems__container--student-card__exam">JAT 2022</p>
+                    <p class="zs--our-gems__container--student-card__rank">AIR 100</p>
+                    <a href="" class="zs--our-gems__container--student-card__story">Story</a>
+                </div>
+            </div>
+            <a class="zs--programs__explore-more" href="">More students
+            </a>
+        </section>
+
+        <section id="zs--contact-us" class="zs--section__padding">
+            <h3 class="zs--contact-us__title">
+                    Get in touch
+            </h3> 
+            
+            <div class="zs__form--container">
+                <form class="zs__form--container__form" action="" method="post">
+                    <div class="zs__form--container__form--group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="zs__form--container__form--group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+
+                    <div class="zs__form--container__form--group">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="zs__form--container__form--group">
+                        <label for="grade">Class</label>
+                        <select id="grade" name="class">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+
+                    <div class="zs__form--container__form--group">
+                        <label for="timeslot">Preferred Time Slot for Phone Call</label>
+                        <input type="time" id="timeslot" name="timeslot" required>
+                    </div>
+
+                    <div class="zs__form--container__form--group">
+                        <button type="submit" onclick="whatsapp()" class="submit-button"><a href="index.html">Submit</a></button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+        <footer class="zs--footer zs--section__padding">
+            <div class="zs--footer__donation">
+                <div class="zs--footer__donation--message">
+                    <h2 class="zs--footer__donation--message__title">Support Our Cause</h2>
+                    <p class="zs--footer__donation--message__para">Your support helps us make a difference in the world. Consider making a donation today.</p>
+                </div>
+
+                <figure class="zs--footer__donation--qr">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png" alt="">
+                </figure>
+            </div>
+
+            <div class="zs--footer__newsletter">
+                <div class="zs--footer__newsletter--content">
+                    <h2 class="zs--footer__newsletter--content__title">
+                        Sign up to get latest update
+                    </h2>
+
+                    <p class="zs--footer__newsletter--content__para">
+                        Sign up for our monthly newsletter for the latest news & articles
+                    </p>    
+                </div>
+
+                <form class="zs--footer__newsletter--form">
+                    <input type="email" placeholder="Enter Your Email" />
+                    <input type="submit" value="Subscribe Now" />
+                </form>
+            </div>
+
+            <div class="zs--footer__author">
+                <div class="zs--footer__author--info">
+                    <a class="zs--header__logo" href="index.html">NBSC</a>
+
+                    <p class="zs--footer__author--info__para">
+                        New Bhagat Singh Club (NBSC) is committed to empowering underprivileged students through inclusive education, personalized mentorship, and quality teaching. Dedicated to guiding students to success, NBSC prepares them for college and competitive exams, striving to make a lasting impact on their lives.
+                    </p>
+                </div>
+
+                <div class="zs--footer__author--quick-links">
+                    <h3 class="zs--footer__author--quick-links__title">Quick Links</h3>
+
+                    <ul class="zs--footer__author--quick-links__container">
+                        <li>About</li>
+                        <li>Programs</li>
+                        <li>Activities</li>
+                        <li>Join us</li>
+                    </ul>
+                </div>
+
+                <div class="zs--footer__author--contact">
+                    <h3 class="zs--footer__author--contact__title">Contact</h3>
+
+                    <ul class="zs--footer__author--contact__container">
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <li>+91 00000 99999</li>
+                        </div>
+
+                        <div>
+                            <i class="fa-regular fa-envelope"></i>
+                            <li>newbhagatsingh_club@gmail.com </li>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <li>Rajpur Khurd, New Delhi, India</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="zs--footer__copy-rights">
+                <p>Copyrights &copy; New Bhagat Singh Club.2024 All Rights Reserved | Desgined and developed by <a href="zartajsolutions.com">Zartaj Solutions</a></p>
+
+                <div class="zs--footer__copy-rights--social">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

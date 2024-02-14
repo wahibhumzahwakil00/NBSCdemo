@@ -1,0 +1,180 @@
+@media screen and (max-width: 1440px) {
+    .zs--header__nav {
+        flex-direction: row; /* Assuming you want horizontal layout at this width */
+        padding: var(--padding-d-m-v) var(--padding-d-l-h);
+        height: auto;
+        transform: translateX(0);
+    }
+
+    .zs--header__nav--link {
+        font-size: var(--font-size-st-sc); /* Adjust the font size as needed */
+    }
+
+    .zs--hamburger {
+        display: none; /* Hide the hamburger icon at larger screens */
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .zs--header__nav {
+        padding: var(--padding-d-m-v) auto;
+    }
+
+}
+
+@media screen and (max-width:900px){
+    /*---------Section-----*/
+    .zs--section__padding{
+        padding: var(--padding-d-l-v) var(--padding-d-mc-h);
+    }
+}
+    /*---------header--------*/
+@media screen and (max-width:768px){
+
+    .zs--header__nav {
+        flex-direction: column;
+        justify-content: center;
+        padding: var(--padding-d-m-v) var(--padding-d-l-h);
+        background-color: var(--color-secondary);
+        transition: all 0.25s ease-in-out;
+        height: 100vh;    
+        position: fixed;
+        top: 0;
+        right: 0;
+        transform: translateX(400rem);
+        z-index: 9;
+    }
+    
+    .zs--hamburger {
+        height: 5rem;
+        width: 8rem;
+        top: 2rem;
+        right: 5rem;
+        background-color: var(--color-secondary);
+        padding: var(--padding-st-s-v);
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        z-index: 10;
+    }
+    
+    .zs--hamburger__line {
+        height: 2px;
+        background-color: var(--color-primary);
+    }
+    
+    .zs--hamburger__line:first-child {
+        width: 50%;
+        transition: all 0.25s ease;
+      }
+    
+    .zs--hamburger__line:nth-child(2) {
+        transition: all 0.1s ease;
+    }
+    
+    .zs--hamburger__line:last-child {
+        width: 50%;
+        transition: all 0.25s ease;
+        align-self: flex-end;
+    }
+    
+    /* Dynamic Class */
+    .zs--display__nav {
+        transform: translateX(0);
+    }
+    
+    .zs--hamburger__line-1 {
+        transform: rotate(45deg) translateX(1.7rem) translateY(-0.2rem);
+    }
+    
+    .zs--hamburger__line-2 {
+        visibility: hidden;
+    }
+    
+    .zs--hamburger__line-3 {
+        transform: rotate(-45deg) translateX(-0.2rem) translateY(-2.1rem);
+    }
+
+    /*------------main-*/
+    .zs--main{
+        gap: 2rem;
+    }
+
+    /*------------------------------------------------result---------*/
+    .zs--result__container--card {
+        width: calc(50% - 1rem);
+    }
+
+}
+
+ @media screen and (max-width: 600px) {
+        .zs--footer__newsletter--form {
+            max-width: 30rem;
+        }
+    }
+
+ @media screen and (max-width: 500px) {
+  /* --------------------------------------- Section Padding */
+  .zs--section__padding {
+    padding: var(--padding-st-l-v) var(--padding-st-s-h);
+  }
+
+  /* --------------------------------------- Header Nav */
+  .zs--header__nav {
+    padding: var(--padding-d-s-v) var(--padding-d-s-h);
+  }
+
+  .zs--header__nav--link {
+    font-size: var(--font-size-st-xs);
+  }
+
+  /*------------------------------------------------main-----------*/
+  .zs--main{
+    gap: 1.68rem;
+  }
+
+  .zs--programs__explore-more{
+    align-self: center;
+  }
+
+  .zs--activities__featured-activities--activity-card__links a{
+    font-size: var(--font-size-st-xs);
+    padding: var(--padding-st-s-v);
+  }
+
+  .zs--result__container--card {
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="time"],
+    select {
+    width: 30rem;
+}
+
+.zs--ourmembers__contaner{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.zs--ourmembers__contaner figure,
+.zs--president__img{
+    width: 30rem;
+    height: 40rem;
+}
+
+
+}
+
+@media screen and (max-width: 460px){
+    .zs--main{
+        gap: 1.35rem;
+    }
+
+    .zs--about-organization-message__content--list_item{
+    flex-basis: 25rem;
+}
+} 
